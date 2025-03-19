@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking with the Gemini API</title>
+</head>
+
+<body>
+  <main>
+    <h1>Baking with the Gemini API</h1>
+    <form>
+      <div class="image-picker">
+        <label class="image-choice">
+          <input type="radio" checked name="chosen-image" value="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Crostata_con_crema_e_fragole.jpg/400px-Crostata_con_crema_e_fragole.jpg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Crostata_con_crema_e_fragole.jpg/400px-Crostata_con_crema_e_fragole.jpg">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
+          <img src="/baked_goods_2.jpg">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
+          <img src="/baked_goods_3.jpg">
+        </label>
+      </div>
+      <div class="image-picker">Select a food image:
+        <button type="button">upload</button>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Enter instructions here" type="text"
+            value="Provide a recipe for the baked goods in the image">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(Results will appear here)</p>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
